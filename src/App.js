@@ -1,11 +1,11 @@
-function App() {
+import React from 'react';
+import { Home } from './pages/home';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello! I am currently developing this website.</p>
-      </header>
-    </div>
+    <Home />
   );
 }
 
 export default App;
+
+const styles = StyleSheet.create({})
