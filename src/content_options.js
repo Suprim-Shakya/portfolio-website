@@ -20,6 +20,23 @@ const dataabout = {
     aboutme: "I am a computer engineering student interested in Data Science and Machine Learning. I aspire to build useful tools and make impactful solutions through technology.",
 };
 
+const worktimeline = [{
+    jobtitle: "Designer of week",
+    where: "YAdfi",
+    date: "2020",
+},
+{
+    jobtitle: "Designer of week",
+    where: "Jamalya",
+    date: "2019",
+},
+{
+    jobtitle: "Designer of week",
+    where: "ALquds",
+    date: "2019",
+},
+];
+
 const skills = [{
         name: "Python",
         value: 90,
