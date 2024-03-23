@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suprim Shakya</title>
+    <!-- add icon -->
+    <link rel="icon" href="img/logo.png" type="image/icon type">
     <!-- for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
     <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,7 +22,6 @@
     <!-- Header -->
     <header>
         <div>
-            <img src="img/logo.png" alt="logo" width="130px" height="100px">
             <p class="who_am_I">Suprim Shakya</p>
         </div>
         <button class="nav-toggle navbar" aria-label="toggle navigation">
@@ -27,11 +31,41 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#experience" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Social Media-->
+    <section width="30px">
+        <div className="stick_follow_icon">
+            <ul class="grid-container">
+                <li>
+                  <a href={socialprofils.twitter}><img src="img/x.png" alt="image" height="30px" width="30px"></a>
+                </li><br>
+                <li>
+                    <a href="https://github.com/Suprim-Shakya"><img src="img/github.png" alt="github" height="30px" width="30px"></a>
+                </li><br>
+                <li>
+                  <a href={socialprofils.facebook}><img src="img/facebook.png" alt="image" height="30px" width="30px">
+                  </a>
+                </li><br>
+                <li>
+                  <a href="https://linkedin.com/suprimshakya"><img src="img/llinkedin.png" alt="image" height="30px" width="30px">
+                  </a>
+                </li><br>
+                <li>
+                  <a href="https://instagram.com/suprimshakya"><img src="img/instagram.png" alt="image" height="30px" width="30px">
+                  </a>
+                </li>
+                <!-- <li>
+                    <p class="rotate">Follow Me</p>
+                </li> -->
+            </ul>
+                
+          </div>
+    </section>
 
     <section>
 
@@ -40,6 +74,8 @@
             <span class="text-2">I develop mobile applications as well.</span>
         </div>
 
+            
+        
     </section>
 
  
