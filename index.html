@@ -2,85 +2,238 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suprim Shakya</title>
-    <!-- add icon -->
-    <link rel="icon" href="img/logo.png" type="image/icon type">
-    <!-- for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
-
 <body>
-    <!-- Header -->
+    <!-- header -->
     <header>
-        <div>
-            <p class="who_am_I">Suprim Shakya</p>
-        </div>
-        <button class="nav-toggle navbar" aria-label="toggle navigation">
-            <span class="button-lines"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-            </ul>
+        <nav>
+            <a data-tab="intro">Introduction</a>
+            <!-- <a href="">Experience</a> -->
+            <a data-tab="skill">Skills</a>
+            <a data-tab="project">Projects</a>
+            <a data-tab="contact">Contact</a>
         </nav>
     </header>
+    <!-- end-header -->
 
-    <!-- Social Media-->
-    <section width="30px">
-        <div className="stick_follow_icon">
-            <ul class="grid-container">
-                <li>
-                  <a href={socialprofils.twitter}><img src="img/x.png" alt="image" height="30px" width="30px"></a>
-                </li><br>
-                <li>
-                    <a href="https://github.com/Suprim-Shakya"><img src="img/github.png" alt="github" height="30px" width="30px"></a>
-                </li><br>
-                <li>
-                  <a href={socialprofils.facebook}><img src="img/facebook.png" alt="image" height="30px" width="30px">
-                  </a>
-                </li><br>
-                <li>
-                  <a href="https://linkedin.com/suprimshakya"><img src="img/llinkedin.png" alt="image" height="30px" width="30px">
-                  </a>
-                </li><br>
-                <li>
-                  <a href="https://instagram.com/suprimshakya"><img src="img/instagram.png" alt="image" height="30px" width="30px">
-                  </a>
-                </li>
-                <!-- <li>
-                    <p class="rotate">Follow Me</p>
-                </li> -->
-            </ul>
-                
-          </div>
-    </section>
-
-    <section>
-
-        <div>
-            <span class="text-1">I love designing and coding.</span>
-            <span class="text-2">I develop mobile applications as well.</span>
+    <!-- Introduction -->
+    <div class="tab" id="intro">
+        <div class="container">
+            <div class="avatar">
+                <img src="images/avatar.png" alt="avatar">
+            </div>
+            <div class="content">
+                <div class="name">Suprim Shakya</div>
+                <div class="job">I'm 
+                    <span class="text-gradient">
+                        Software Engineer.
+                    </span> 
+                </div>
+                <div class="desc">
+                    I am an AI Enthusiast working hard to become a data scientist. <br>
+                    <a data-tab="skill" class="text-gradient">
+                        See my skills
+                    </a>
+                </div>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
         </div>
+    </div>
+    <!-- End-Introduction -->
+    
+    <!-- Experience -->
+    <!-- <div class="tab" id="experience">
+        <div class="container">
+            <div class="list">
+                <div class="item">
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End-Experience -->
 
+    <!-- Skills -->
+    
+    <div class="tab" id="skill">
+        <div class="container">
+            <div class="list">
+                <div class="item">
+                    <i class="fa-brands fa-python"></i>
+                    <div class="name">Python</div>
+                    <div class="desc">
+                        70%
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-js"></i> 
+                    <div class="name">Javascript</div>
+                    <div class="desc">
+                        50%
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="name">React</div>
+                    <div class="desc">
+                        50%
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="name">React Native</div>
+                    <div class="desc">
+                        50%
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-git"></i>
+                    <div class="name">Git</div>
+                    <div class="desc">
+                        100%
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-html5"></i> 
+                    <div class="name">Html</div>
+                    <div class="desc">
+                        100%
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div class="name">CSS</div>
+                    <div class="desc">
+                        60%
+                    </div>
+                </div>
+                <div class="item">
+                    <i><img src="images/mysql.png" width="50px" height="50px"></i>
+                    <div class="name">MySQL</div>
+                    <div class="desc">
+                        70%
+                    </div>
+                </div>
+                <div class="item">
+                    <i><img src="images/theano.png" width="50px" height="50px"></i>
+                    <div class="name">Theano</div>
+                    <div class="desc">
+                        10%
+                    </div>
+                </div>
+                <div class="item">
+                    <i><img src="images/c.png" width="50px" height="50px"></i>
+                    <div class="name">C</div>
+                    <div class="desc">
+                        60%
+                    </div>
+                </div>
+                <div class="item">
+                    <i><img src="images/cpp.png" width="50px" height="50px"></i>
+                    <div class="name">C++</div>
+                    <div class="desc">
+                        60%
+                    </div>
+                </div>
+                <div class="item">
+                    <i><img src="images/scikit-learn-logo.png" width="50px" height="50px"></i>
+                    <div class="name">Sci-Kit Learn</div>
+                    <div class="desc">
+                        10%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- End-Skills  -->
+
+    <!-- Project -->
+
+    <div class="tab" id="project">
+        <div class="container">
+            <div class="list">
+                <div class="item">
+                    
+                    <img src="images/project1.jpg" alt="project1">
+                    <div class="index">#1</div>
+                    <div class="name">Signature Verification using SNN</div>
+                    <div class="desc">
+                        Signature is verified in our project.
+                    </div>
+                    <div class="author">
+                        <div class="job">Machine Learning</div>
+                        <div class="time">
+                        2022/03/23
+                        <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                
+                </div>
             
-        
-    </section>
+                <div class="item">
+                    <a href="https://github.com/Suprim-Shakya/TravelApp">
+                    <img src="images/project2.jpg" alt="project2"></a>
+                    <div class="index">#2</div>
+                    <div class="name">TravelGuide</div>
+                    <div class="desc">
+                        Heritage is identified using YOLOv8.Heritage is identified using YOLOv8.Heritage is identified using YOLOv8.
+                    </div>
+                    <div class="author">
+                        <div class="job">Machine Learning</div>
+                        <div class="time">
+                        2023/03/23
+                        <i class="fa-regular fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-Project  -->
 
- 
- 
+    <!-- Contact -->
+    <div class="tab" id="contact">
+        <div class="container">
+            <div class="thank text-gradient">
+                Thank you!
+            </div>
+            <div class="desc">
+                Feel free to contact me. 
+                <br>
+                    <button class="btn-grad"><a href="assets/CV_SuprimShakya.pdf" title="CV" download >
+                        Download My Resume
+                     </a>
+                    </button>
+                <br>
+                <a data-tab="intro" class="text-gradient">See My Intro</a>
+            </div>
+            <div class="list">
+                <div class="item">
+                    <i class="fa-solid fa-phone"></i>
+                    +977-9860390242
+                </div>
+            <div class="item">
+                <i class="fa-regular fa-envelope"></i>
+                suprimshakya9860@gmail.com
+            </div>
+            <div class="item">
+                <i class="fa-brands fa-linkedin"></i>
+                https://www.linkedin.com/in/suprimshakya/
+            </div>
+            <div class="item">
+                <i class="fa-brands fa-github"></i>
+                https://github.com/Suprim-Shakya/
+            </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="js/script.js"></script>
+    <!-- End-Contact -->
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: Poppins;
+    margin: 0;
+    font-size: 13px;
+    background-color: #23282F;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav a{
+    color: aliceblue;
+    font-size: small;
+    margin: 0 30px;
+}
+
+.tab{
+    width: 100%;
+    height: 100vb;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab .container {
+    width: 1140px;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+}
+
+#intro{
+    background-color: #16222D;
+}
+
+#intro .avatar{
+    text-align: right;
+    height: 100%;
+}
+
+#intro .avatar img{
+    filter: saturate(0.5);
+}
+
+#intro .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    width: 500px;
+    max-width: 80%;
+}
+
+#intro .content .name,
+#intro .content .job{
+    font-size: 6em;
+    font-family: Righteous;
+    line-height: 1em;
+}
+
+.text-gradient{
+    background-image: linear-gradient(
+        to right, #f4454a, #ca3ea7
+    );
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#intro .content .desc{
+    margin-top: 1.2em;
+    width: 70%;
+
+}
+
+#intro .content a{
+    margin-top: 1.2em;
+}
+
+#intro .content i{
+    font-size: 10em;
+    color: #293046;
+    position: absolute;
+    top: -50px;
+    right: -100px;
+}
+
+/* skill */
+#skill{
+    background-image: linear-gradient(
+        45deg, #3a2530, #171515, #412726
+    );
+    background-size: cover;   
+}
+
+#skill .list{
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 60px;
+    box-sizing: border-box;
+    gap: 0;
+}
+
+#skill .list .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#skill .list .item:nth-child(odd){
+    background-color: #3F2525;
+}
+
+#skill .list .item i{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(178, 173, 173);
+    color: #3f070e;
+    font-size: 2em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px #000;
+}
+
+#skill .list .item .name{
+    font-size: 1.5em;
+    margin-top: 0.7em;
+}
+
+#skill .list .item .desc{
+    font-size: small;
+    opacity: 0.8;
+}
+
+/* project */
+#project{
+    background-image: linear-gradient(
+        45deg, #472939, #171515, #654949
+    );
+    color: #444B57;
+}
+
+#project .list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 50px;
+}
+
+#project .list img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+#project .list .item{
+    border-radius: 30px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+}
+
+#project .list .item .index{
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    transform: translateY(-100%);
+    background-color: #fff;
+    padding: 10px;
+    font-style: italic;
+    border-top-right-radius: 20px; 
+}
+
+#project .list .name{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+
+#project .list .desc{
+    padding: 0 10px 10px 10px;
+    font-size: small;
+}
+
+#project .list .item .author{
+    display: flex;
+    justify-content: space-between;
+    padding:    10px;
+    border-top: 1px solid #eee;
+}
+
+#project .list .item .job{
+    font-weight: bold;
+}
+
+#project .container{
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+/* contact */
+#contact{
+    background-color: #242330;
+}
+
+#contact .thank{
+    font-size: 5em;
+    font-weight: bold;
+    align-items: center;
+}
+
+#contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#contact .desc{
+    width: 550px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.btn-grad{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    margin: 10px auto;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 20px;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-grad:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+#contact .list{
+    text-align: center;
+}
+
+#contact .list .item{
+    margin: 10px 30px;
+}
+
+@media screen and (max-width: 991px){
+    #intro .avatar img{
+        transform: translateX(130px);
+    }
+}
+
+@media screen and (max-width: 767px){
+    body{
+        font-size: 10px;
+    }
+    header nav a{
+        margin: 10px;
+    }
+    #intro .avatar img{
+        transform: none;
+    }
+    #intro .content .name{
+        font-size: 4em;
+    }
+    #intro .content i{
+        position: unset;
+    }
+    #skill .list{
+        padding: 0;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skill .list .item:nth-child(2),
+    #skill .list .item:nth-child(3n){
+        background-color: #3F2525;
+    }
+    #project .list{
+        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+    #project .list .item img{
+        height: 100px;
+    }
+}
+
+.tab{
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 1;
+}
+
+#intro{
+    z-index: 2;
+}
+
+.tab.active{
+    --x: 50%;
+    --y: 50%;
+    clip-path: circle(
+        0 at var(--x) var(--y)
+    );
+    animation: showTab 1s ease-in-out 1 forwards;
+}
+
+@keyframes showTab {
+    to{
+        clip-path: circle(
+            200% at var(--x) var(--y)
+        );
+    }
+    
+}
